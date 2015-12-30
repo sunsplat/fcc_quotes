@@ -1,5 +1,7 @@
 body {
-	background-color: #4D394B;
+	
+	background-image: url('thinking.jpg');
+	background-position: center;
 	padding: 20px;
 	font-family: 'Droid Sans', sans-serif;
 }
@@ -11,10 +13,10 @@ header {
 
 main {
 	width: 50%;
-	padding: 10px 30px;
-	background-color: #E8AC3C;
+	padding: 20px 30px;
+	background-color: #4D394B;
 	color: #fff;
-	margin: auto auto;
+	margin: 50px auto;
 	border-radius: 25px;
 }
 
