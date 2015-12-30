@@ -1,6 +1,7 @@
 body {
 	background-image: url('thinking.jpg');
 	background-position: center;
+	background-size: cover;
 	padding: 20px;
 	font-family: 'Droid Sans', sans-serif;
 }
