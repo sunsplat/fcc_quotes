@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Deep Thoughts</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header>
+			<h1>Jack Handey's Deep Thoughts</h1>
+		</header>
+		<main>
+			<blockquote class="quotes">hello</blockquote>
+		</main>
+		<footer>
+			<button type="button" class="btn btn-primary" id="quote">Another Thought</button><button class="btn btn-primary">Share on Twitter</button>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+		<script>
+
+			$(document).ready(function() {
+
+				$('blockquote.quotes').html('If you really want to impress people with your computer literacy, add the words "dot com" to the end of everything you say, dot com.');
+				
+				$('#quote').on('click', quote);
+				
+			
+				function quote() {
+
+					var quotes = [
+					"If trees could scream, would we be so cavalier about cutting them down? We might, if they screamed all the time, for no good reason.", 
+					"When I die, I want to die peacefully, in my sleep, like my grandpa did. Not like the screaming passengers in his car.",
+					"I believe you should live each day as if it is your last, which is why I don't have any clean laundry because, come on, who wants to wash clothes on the last day of their life?",
+					"My young brother asked me what happens after we die. I told him we get buried under a bunch of dirt and worms eat our bodies. I guess I should have told him the truth--that most of us go to Hell and burn eternally--but I didn't want to upset him.",
+					"When I go to heaven, I want to see my grandpa again. But he better have lost the nose hair and the old-man smell.",
+					"Often, when I am reading a good book, I stop and thank my teacher. That is, I used to, until she got an unlisted number."
+					];
+
+					console.log(typeof quotes)
+					var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+					$('blockquote.quotes').html(randomQuote);
+				}
+			});
+		</script>
+	</body>
+</html>
